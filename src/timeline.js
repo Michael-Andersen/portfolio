@@ -13,7 +13,7 @@ class Timeline extends React.Component {
             return item.isInternal ? (<li key={item.display}><NavLink exact to={item.url}>{item.display}</NavLink></li>)
             : (<li key={item.display}><a href={item.url}>{item.display}</a></li>);
         });
-        const divClass = isRight ? "container right" : "container left";
+        const divClass = isRight ? `container right ${entry.contentClass}` : `container left ${entry.contentClass}`;
         const circle = isRight ? styled.div`
                     padding: 10px 40px;
                     position: relative;

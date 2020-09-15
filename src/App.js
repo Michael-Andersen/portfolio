@@ -5,6 +5,7 @@ import {
   HashRouter
 } from "react-router-dom";
 
+import About from './about.js'
 import Education from './education.js'
 import Experience from './experience.js'
 import Projects from './projects.js'
@@ -13,8 +14,6 @@ import ImageMorpher from './imageMorpher.js'
 import './App.css';
 
 class App extends React.Component {
- 
-
   render() {
     return (
       <HashRouter>
@@ -66,14 +65,6 @@ class SidePanel extends React.Component {
         <ul>{sectionDisplays}</ul>
       </div>
     );
-  }
-}
-
-class About extends React.Component {
-  render() {
-    return (
-      <div>About</div>
-    )
   }
 }
 

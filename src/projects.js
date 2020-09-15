@@ -8,7 +8,8 @@ class Projects extends React.Component {
                 subtitle: "Personal Project", 
                 paragraphs: [`The website you are currently viewing!`,
                             "My first project built with React, without the use of any portfolio templates."],
-                links: [{display: "View Source Code", url: "https://github.com/Michael-Andersen/ImageMorpher", isInternal: false}]
+                links: [{display: "View Source Code", url: "https://github.com/Michael-Andersen/portfolio", isInternal: false}],
+                contentClass: "React"
         };
         const morpher = {title: "Image Morpher", 
                 date: "2020", 
@@ -16,7 +17,8 @@ class Projects extends React.Component {
                 paragraphs: [`Windows desktop application that lets users create animations that "morph" one image into another.`,
                             "Built with C# and WPF, C and embedded assembly for dramatically improved performance."],
                 links: [{display: "View Source Code", url: "https://github.com/Michael-Andersen/ImageMorpher", isInternal: false},
-                        {display: "View Walkthrough with Screenshots", url: "/projects/imagemorpher" , isInternal: true}]
+                        {display: "View Walkthrough with Screenshots", url: "/projects/imagemorpher" , isInternal: true}],
+                contentClass: "Csharp"
             };
         const entries = [portfolio, morpher];
         return (
