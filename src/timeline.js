@@ -13,7 +13,7 @@ class Timeline extends React.Component {
             return item.isInternal ? (<li key={item.display}><NavLink exact to={item.url}>{item.display}</NavLink></li>)
             : (<li key={item.display}><a href={item.url}>{item.display}</a></li>);
         });
-        const divClass = isRight ? `container right ${entry.contentClass}` : `container left ${entry.contentClass}`;
+        const divClass = isRight ? `TimelineBox TimelineRight ${entry.contentClass}` : `TimelineBox TimelineLeft ${entry.contentClass}`;
         const circle = isRight ? styled.div`
                     padding: 10px 40px;
                     position: relative;
@@ -92,9 +92,9 @@ class Timeline extends React.Component {
             return (<div key={entry.title} className={divClass}>
                       <div className="content">
                       <div className="EntryTopline">
-                        <div className="EntryTitle"><h3>{entry.title}</h3></div><div className="EntryDate"><h3>{entry.date}</h3></div>
+                        <div className="EntryTitle"><h5>{entry.title}</h5></div><div className="EntryDate"><h5>{entry.date}</h5></div>
                       </div>
-                      <h4>{entry.subtitle}</h4>
+                      <h6>{entry.subtitle}</h6>
                       <ul>{paragraphs}</ul>
                       <ul className="LinksList">{links}</ul>
                       </div>
