@@ -30,11 +30,11 @@ class About extends React.Component {
             <Row>
             <Col></Col>
             <Col xs={8}>
-            <p className="About">Below are the technologies I have experience in. I am as excited about further developing my skills in these technologies as
-            I am to add new ones to my wheelhouse! </p>
+            <p className="About">Below are the technologies I have experience in. I am excited to further develop these skills and I am keen to add
+            more technologies to my wheelhouse!</p>
             </Col><Col></Col></Row><Row><Col></Col><Col xs={10}>
             <ul className="TechStack">
-                <li><span className="TechSection">Programming languages:</span> Java, Python, C#, Javascript, C++, PHP, Bash, Terraform, HTML5, CSS</li>
+                <li><span className="TechSection">Programming languages:</span> Java, Python, C#, JavaScript, C++, PHP, Bash, Terraform, HTML5, CSS</li>
                 <li><span className="TechSection">Deployment tools:</span> Maven, Ant, Docker, AWS</li>
                 <li><span className="TechSection">Servers:</span> Nginx, Tomcat, Apache, Gunicorn</li>
                 <li><span className="TechSection">CI/CD:</span> Jenkins, AWS CodePipeline</li>
