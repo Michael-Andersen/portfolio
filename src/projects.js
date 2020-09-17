@@ -20,7 +20,14 @@ class Projects extends React.Component {
                         {display: "View Walkthrough with Screenshots", url: "/projects/imagemorpher" , isInternal: true}],
                 contentClass: "Csharp"
             };
-        const entries = [portfolio, morpher];
+        const wip = {title: "More Projects to Come", 
+            date: "2020", 
+            subtitle: " ",
+            paragraphs: [`As I continue to build this website I will be adding more of my school and personal projects`],
+            links: [],
+            contentClass: "Construction"
+        };
+        const entries = [portfolio, morpher, wip];
         return (
         <div className="TimelineContainer">
             <Timeline entries={entries}/>

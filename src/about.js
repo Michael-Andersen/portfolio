@@ -5,12 +5,15 @@ import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 
 import me from './me.jpg'
+import mail from './mail.png'
+import github from './github.png'
+import linkedin from './linkedin.png'
 
 class About extends React.Component {
     render() {
         return (
         <Container className="About">
-            <Row className="AboutHeader"><h2>Software Developer in Toronto</h2></Row>
+            <Row className="AboutHeader"><h3>Software Developer in Toronto</h3></Row>
             <Row>
             <Col></Col>
             <Col xs={8}>
@@ -43,6 +46,10 @@ class About extends React.Component {
                 <li><span className="TechSection">Operating Systems:</span> Windows, Linux</li>
             </ul></Col>
             </Row>
+            <Row><Col lg={{span:3, offset:4}} xs={{span:8, offset:2}} className="LinkBox"><a href="mailto:mjpandersen@gmail.com"><Image src={mail}/></a>
+            <a href="https://github.com/Michael-Andersen"><Image src={github}/></a>
+            <a href="https://www.linkedin.com/in/michael-andersen-van"><Image src={linkedin}/></a>
+            </Col></Row>
         </Container>
       )
     }

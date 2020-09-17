@@ -264,12 +264,12 @@ ul {
 .TimelineBox::after {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: -22px;
+  width: 50px;
+  height: 50px;
+  right: -25px;
   background-color: var(--text);
   background-repeat: no-repeat;
-  background-position: 55% 45%;
+  background-position: 50% 50%;
   border: 2px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
@@ -288,9 +288,24 @@ ul {
   background-image: url('./csharp.png');
 }
 
+.Construction::after {
+  background-image: url('./construction.png');
+}
+
 .React::after {
   background-image: url('./react.png');
 }
+
+.LinkBox {
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-around;
+}
+
+
 
 .LinksList {
   display: flex;
@@ -339,7 +354,7 @@ ul {
 
 /* Fix the circle for containers on the right side */
 .TimelineRight::after {
-  left: -22px;
+  left: -25px;
 }
 
 /* The actual content */
