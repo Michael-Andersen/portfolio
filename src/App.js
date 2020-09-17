@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Route,
   NavLink,
@@ -9,7 +9,6 @@ import {
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Dropdown from 'react-bootstrap/Dropdown'
 
 import About from './about.js'
 import Education from './education.js'
@@ -18,30 +17,6 @@ import Projects from './projects.js'
 import ImageMorpher from './imageMorpher.js'
 
 import './App.css';
-
-function useForceUpdate(){
-  const [value, setValue] = useState(0); // integer state
-  return () => setValue(value => ++value); // update the state to force render
-}
-
-function DropdownButton(props) {
-  const history = useHistory();
-  function handleClick() {
-    history.push(props.path);
-  }
-
-  /*return (
-    <Dropdown.Item onClick={handleClick}>
-      {props.title}
-    </Dropdown.Item>
-  );*/
-
-  return (
-    <option value={props.path} key={props.title}>
-      {props.title}
-    </option>
-  );
-}
 
 class App extends React.Component {
   render() {
@@ -69,8 +44,15 @@ class App extends React.Component {
   }
 }
 
+function DropdownButton(props) {
+  return (
+    <option value={props.path} key={props.title}>
+      {props.title}
+    </option>
+  );
+}
+
 function SidePanel(props) {
-  const forceUpdate = useForceUpdate();
   const history = useHistory();
   function handleClick(value) {
     history.push(value);
@@ -88,17 +70,6 @@ function SidePanel(props) {
                 });
                 const sectionDisplaysMobile = sections.map(DropdownButton);
                   
-               /* return (
-                  <div className="SidePanel text-justify">
-                    <ul>{sectionDisplaysFull}</ul>
-                    <Dropdown className="MobileMenu">
-                    <Dropdown.Toggle>Navigation</Dropdown.Toggle>
-                    <Dropdown.Menu onToggle={forceUpdate} className="dropdown-menu MobileMenu" aria-labelledby="dropdownMenu2">{sectionDisplaysMobile}</Dropdown.Menu>
-                    </Dropdown>
-                  </div>
-                  
-                );
-                */
                 return (
                   <div className="SidePanel">
                     <ul>{sectionDisplaysFull}</ul>
@@ -108,15 +79,6 @@ function SidePanel(props) {
                   </div>);
 
   }
-
-
-class Music extends React.Component {
-  render() {
-    return (
-      <div> Music</div>
-    )
-  }
-}
 
 export default App;
 
