@@ -47,14 +47,13 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter>
-      <Container className="MainView">
-      <Row>
-      <Col xs={4}>
-        <header className="App-header">
-          <p>Michael Andersen</p>
-        </header>
-      </Col><Col></Col><Col xs={4}>
-      <SidePanel/></Col>
+      <Container fluid className="TopView">
+      <Row className="TopView">
+      <Col className="App-header">
+          Michael Andersen
+      </Col><Col xs={{offset:1}} className="SideCol">
+      <SidePanel/>
+      </Col>
       </Row>
       </Container>
       <div className="MainView">
@@ -82,9 +81,9 @@ function SidePanel(props) {
                 {title:"Projects", path:"/projects", hasSubsection: true}]
   const sectionDisplaysFull = sections.map((item) => {
                   return item.hasSubsection ? (
-                    <li className="Section" key={item.title}><NavLink className="links text-decoration-none text-reset text-justify" to={item.path}>{item.title}</NavLink></li>
+                    <li className="Section" key={item.title}><NavLink className="links text-decoration-none text-reset" to={item.path}>{item.title}</NavLink></li>
                       )
-                      : (<li className="Section" key={item.title}><NavLink className="links text-decoration-none text-justify text-reset" exact to={item.path}>{item.title}</NavLink></li>
+                      : (<li className="Section" key={item.title}><NavLink className="links text-decoration-none text-reset" exact to={item.path}>{item.title}</NavLink></li>
                       );
                 });
                 const sectionDisplaysMobile = sections.map(DropdownButton);
@@ -101,7 +100,7 @@ function SidePanel(props) {
                 );
                 */
                 return (
-                  <div className="SidePanel text-justify">
+                  <div className="SidePanel">
                     <ul>{sectionDisplaysFull}</ul>
                     <select className="MobileMenu" onChange={event =>handleClick(event.target.value)}>
                     {sectionDisplaysMobile}
