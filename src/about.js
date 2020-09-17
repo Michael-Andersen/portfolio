@@ -47,9 +47,9 @@ class About extends React.Component {
             </ul></Col>
             </Row>
             <Row><Col lg={{span:4, offset:4}} xs={{span:9, offset:1}} className="LinkBox">
-            <a href="https://github.com/Michael-Andersen"><Image src={github}/></a>
+            <a target="_blank" href="https://github.com/Michael-Andersen" rel="noopener noreferrer"><Image src={github}/></a>
             <a href="mailto:mjpandersen@gmail.com"><Image src={mail}/></a>
-            <a href="https://www.linkedin.com/in/michael-andersen-van"><Image src={linkedin}/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/michael-andersen-van" rel="noopener noreferrer"><Image src={linkedin}/></a>
             </Col></Row>
         </Container>
       )

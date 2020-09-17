@@ -11,7 +11,7 @@ class Timeline extends React.Component {
         });
         const links = entry.links.map((item, index) => {
             return item.isInternal ? (<li key={item.display}><NavLink exact to={item.url}>{item.display}</NavLink></li>)
-            : (<li key={item.display}><a href={item.url}>{item.display}</a></li>);
+            : (<li key={item.display}><a target="_blank" href={item.url} rel="noopener noreferrer">{item.display}</a></li>);
         });
         const divClass = isRight ? `TimelineBox TimelineRight ${entry.contentClass}` : `TimelineBox TimelineLeft ${entry.contentClass}`;
         const circle = isRight ? styled.div`
