@@ -7,7 +7,7 @@ class Experience extends React.Component {
                     date: "2020", 
                     subtitle: "Yalty", 
                     paragraphs: ["Working with a team of four, built a transactional messenging system for a new startup.", 
-                        "Deployed serverlessly on AWS, using technologies such as terraform, CodePipeline (for CI/CD), and the Serverless framework.",
+                        "Deployed serverlessly on AWS, using technologies such as Terraform, AWS CodePipeline (for CI/CD), and the Serverless framework.",
                         "Followed an agile methodology and met frequently with the CTO and CEO to discuss design decisions."],
                     links:[],
                     contentClass: "Experience"
@@ -23,12 +23,12 @@ class Experience extends React.Component {
         const sap = {title: "Agile Developer Intern", 
                     date: "2018-2019", 
                     subtitle: "SAP", 
-                    paragraphs: ["Worked on an infrascture team for the SAP Cloud Analytics product", `Added new features, monitored performance, 
-                                and fixed bugs in APIs and microservices.`, "Participated in full software development lifecycle for internal tools",
-                                "Used technologies such as Java, Spring Boot, Python, Django, Bash, Linux, Docker, Jenkins, Jira, Nginx, Bash, and Gunicorn. ",
+                    paragraphs: ["Worked on an infrastructure team for the SAP Cloud Analytics product.", `Added new features, monitored performance, 
+                                and fixed bugs in APIs and microservices.`, "Participated in full software development lifecycle for internal tools.",
+                                "Used technologies such as Java, Spring Boot, Python, Django, Bash, Linux, Docker, Jenkins, Jira, Nginx, and Gunicorn. ",
                                 "Worked in an agile environment including standup meetings and worked on cross-team projects as well.",
-                                "Won first prize on a team of four in the SAP IXP Intern Hackathon July 2018",
-                                "Original eight month co-op assignment was extended for an additional four months based on my initial results"],
+                                "Won first prize on a team of four in the SAP IXP Intern Hackathon July 2018.",
+                                "Original eight month co-op assignment was extended for an additional four months based on my initial results."],
                     links:[],
                     contentClass: "Experience"
             };

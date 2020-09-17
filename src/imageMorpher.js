@@ -9,11 +9,11 @@ class ImageMorpher extends React.Component {
   
     render() {
         const controlStep = {screenshot: controlLines, alt:"screenshot of control lines", description:`Start creating a new project and select your source and destination images.
-        Now draw control lines with the mouse and drag them into the position to map out the morph from
+        Now draw control lines with the mouse and drag them into position to map out the morph from
         source to destination.`};
         const settingStep = {screenshot: settings, alt:"screenshot of settings menu", description:`Use the settings menu to customize the control line interface, 
         number of frames in the morph, performance enhancements, and more.`};
-        const playerStep = {screenshot: player, alt:"screenshot of morph viewer", description:`Create a new morph and view it in the morph viewer.`};
+        const playerStep = {screenshot: player, alt:"screenshot of morph viewer", description:`Create a new morph and view it in the morph viewer!`};
         const morphStep = {screenshot: morph, alt:"gif of morph", description:[`A sample morph turned into a gif
         (using source and destination images from `, <a key="3" href="https://generated.photos/">generated.photos</a>,`)`]};
         const entries = [controlStep, settingStep, playerStep, morphStep]
