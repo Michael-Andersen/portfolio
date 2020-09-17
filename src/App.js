@@ -51,7 +51,7 @@ class App extends React.Component {
       <Row className="TopView">
       <Col className="App-header">
           Michael Andersen
-      </Col><Col xs={{offset:1}} className="SideCol">
+      </Col><Col className="SideCol">
       <SidePanel/>
       </Col>
       </Row>

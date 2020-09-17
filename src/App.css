@@ -391,7 +391,7 @@ ul {
 
 /* Make sure all circles are at the same spot */
   .TimelineLeft::after, .TimelineRight::after {
-    left: 15px;
+    left: 7px;
   }
 
 /* Make all right containers behave like the left ones */
