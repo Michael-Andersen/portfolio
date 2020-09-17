@@ -17,9 +17,9 @@ class About extends React.Component {
             <Row>
             <Col></Col>
             <Col xs={8}>
-                <p>I am a recent graduate of a computer science diploma program just starting my journey in the software industry.
-                So far I have over one year experience demonstrating my ability to learn quickly and deliver robust software
-                solutions. I love to solve challenging problems creatively and take pride in my work. In addition to programming,
+                <p>I am a recent graduate of a computer science diploma program eager to grow in the software industry.
+                I have over one year experience demonstrating my ability to learn quickly and deliver robust software
+                solutions. I love to find creative solutions to challenging problems and I take pride in my work. In addition to programming,
                 I have a passion for math, music, film, and travel.</p>
             </Col><Col></Col></Row>
             <Row>
