@@ -2,6 +2,9 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
+
+import me from './me.jpg'
 
 class About extends React.Component {
     render() {
@@ -16,6 +19,11 @@ class About extends React.Component {
                 solutions. I love to solve challenging problems creatively and take pride in my work. In addition to programming,
                 I have a passion for math, music, film, and travel.</p>
             </Col><Col></Col></Row>
+            <Row>
+                <Col className="Portrait">
+                <Image src={me} alt="Photo of Michael Andersen" fluid roundedCircle />
+                </Col>
+            </Row>
             <Row>
             <Col></Col>
             <Col xs={8}>

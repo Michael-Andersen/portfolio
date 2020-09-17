@@ -94,7 +94,7 @@ class Timeline extends React.Component {
                       <div className="EntryTopline">
                         <div className="EntryTitle"><h5>{entry.title}</h5></div><div className="EntryDate"><h5>{entry.date}</h5></div>
                       </div>
-                      <h6>{entry.subtitle}</h6>
+                      <div className="EntrySub"><h6>{entry.subtitle}</h6></div>
                       <ul>{paragraphs}</ul>
                       <ul className="LinksList">{links}</ul>
                       </div>

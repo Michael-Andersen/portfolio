@@ -18,7 +18,7 @@ class ImageMorpher extends React.Component {
         (using source and destination images from `, <a key="3" href="https://generated.photos/">generated.photos</a>,`)`]};
         const entries = [controlStep, settingStep, playerStep, morphStep]
         return (<div className="TimelineContainer">
-        <Walkthrough entries={entries} title="ImageMorpher"/>
+        <Walkthrough entries={entries} title="Image Morpher"/>
     </div>);
     }
   }

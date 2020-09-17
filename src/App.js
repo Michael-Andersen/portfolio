@@ -62,7 +62,6 @@ class App extends React.Component {
         <Route path="/education" component={Education}/>
         <Route path="/experience" component={Experience}/>
         <Route exact path="/projects" component={Projects}/>
-        <Route path="/music" component={Music}/>
         <Route path="/projects/imagemorpher" component={ImageMorpher}/>
       </div>
       
@@ -80,8 +79,7 @@ function SidePanel(props) {
   const sections = [{title:"About", path: "/", hasSubsection: false}, 
                 {title:"Education", path: "/education", hasSubsection: false}, 
                 {title:"Experience", path: "/experience", hasSubsection: false}, 
-                {title:"Projects", path:"/projects", hasSubsection: true}, 
-                {title:"Music", path:"/music", hasSubsection: false}];
+                {title:"Projects", path:"/projects", hasSubsection: true}]
   const sectionDisplaysFull = sections.map((item) => {
                   return item.hasSubsection ? (
                     <li className="Section" key={item.title}><NavLink className="links text-decoration-none text-reset text-justify" to={item.path}>{item.title}</NavLink></li>
