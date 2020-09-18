@@ -9,12 +9,15 @@ import {
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Image from 'react-bootstrap/Image';
 
 import About from './about.js'
 import Education from './education.js'
 import Experience from './experience.js'
 import Projects from './projects.js'
 import ImageMorpher from './imageMorpher.js'
+
+import hamburger from './hamburger.png'
 
 import './App.css';
 
@@ -52,6 +55,24 @@ function DropdownButton(props) {
   );
 }
 
+class HamburgerMenu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    }
+  }
+  handleClick() {
+    this.setState({isOpen: !this.state.isOpen});
+  }
+
+  render(){
+  const menu = (<div>{this.state.isOpen ? <ul onClick={()=>this.handleClick()} className="list-group MobileList">{this.props.options}</ul> : null}</div>);
+  return(<div><Image src={hamburger} onClick= {() => this.handleClick()}  className="MobileMenu"/>
+          {menu} </div>);
+  }
+}
+
 function SidePanel(props) {
   const history = useHistory();
   function handleClick(value) {
@@ -68,15 +89,20 @@ function SidePanel(props) {
                       : (<li className="Section" key={item.title}><NavLink className="links text-decoration-none text-reset" exact to={item.path}>{item.title}</NavLink></li>
                       );
                 });
-                const sectionDisplaysMobile = sections.map(DropdownButton);
-                  
+                //const sectionDisplaysMobile = sections.map(DropdownButton);
+                const sectionDisplaysMobile = sections.map( (item) => {
+                  return item.hasSubsection ? (
+                    <li className="list-group-item" key={item.title}><NavLink className="text-decoration-none text-reset" to={item.path}>{item.title}</NavLink></li>
+                      )
+                      : (<li className="list-group-item" key={item.title}><NavLink className="text-decoration-none text-reset" exact to={item.path}>{item.title}</NavLink></li>
+                      );
+                  });
                 return (
                   <div className="SidePanel">
-                    <ul>{sectionDisplaysFull}</ul>
-                    <select className="MobileMenu" onChange={event =>handleClick(event.target.value)}>
-                    {sectionDisplaysMobile}
-                    </select>
+                    <ul className="FullList">{sectionDisplaysFull}</ul>
+                    <div className="MobileMenu"><HamburgerMenu options={sectionDisplaysMobile} /></div>
                   </div>);
+                  
 
   }
 

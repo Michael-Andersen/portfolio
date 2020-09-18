@@ -19,7 +19,7 @@ class Timeline extends React.Component {
                     <div className="EntryTitle"><h5>{entry.title}</h5></div><div className="EntryDate"><h5>{entry.date}</h5></div>
                   </div>
                   <div className="EntrySub"><h6>{entry.subtitle}</h6></div>
-                  <ul>{paragraphs}</ul>
+                  <div><ul className="EntryPoints">{paragraphs}</ul></div>
                   <ul className="LinksList">{links}</ul>
                   </div>
                 </div>); 

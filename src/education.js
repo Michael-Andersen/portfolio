@@ -6,10 +6,11 @@ class Education extends React.Component {
         const bcit = {title: "Computers System Technology Diploma", 
                 date: "2017-2020", 
                 subtitle: "British Columbia Institute of Technology", 
-                paragraphs: [`Studied principles of Object Oriented programming and design, relational databases, algorithms, and data structures
+                paragraphs: ["Graduated with Distinction and received the Toshiba Mobile Computer Award recognizing my hard work and achievement.",
+                `Studied principles of Object Oriented programming and design, relational databases, algorithms, and data structures
                 with an emphasis on practical applications and group work.`,
-                "Completed the Digital Processing option with special courses on Audio/Visual alogrithms, Win32 programming, and DirectX 12.",
-                "Graduated with Distinction and received the Toshiba Mobile Computer Award recognizing my hard work and achievement." ],
+                "Completed the Digital Processing option with special courses on Audio/Visual algorithms, Win32 programming, and DirectX 12.",
+                 ],
                 links:[],
                 contentClass: "Education"
             };
