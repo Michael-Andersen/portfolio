@@ -160,9 +160,12 @@ ul {
   list-style: none;
 }
 
-.MobileMenu {
+.HamburgerDiv {
+  margin-bottom: 30px;
+}
+
+.HamburgerDiv {
   display: none;
-  padding-right: 50px;
 }
 
 .FullList {
@@ -171,32 +174,53 @@ ul {
   justify-content: flex-end;
 }
 
+.MobileSection {
+  display: none;
+}
 @media (max-width: 960px) {
   .FullList     { display: none; }
-  .MobileMenu { display: inline-block; 
-                padding-right: 50px;
+  .MobileSection {
+    display: inline-block;
+  }
+  .HamburgerDiv { display: inline-block; 
+    flex-direction: column;
+    padding-right: 20px;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 }
 
 .MobileList {
   color: black;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   height: 100vh;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .SidePanel {
   padding-top: 20px;
   padding-bottom: 30px;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
 
-.SidePanel li {
+.FullList li {
   padding-left: 24px;
   padding-right: 0;
 }
 
-.SidePanel li:last-child {
+.FullList li:last-child {
   padding-right: 0;
 }
 
