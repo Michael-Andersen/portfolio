@@ -23,7 +23,7 @@ class Experience extends React.Component {
                 };
         const sap = {title: "Agile Developer Intern", 
                     date: "2018-2019", 
-                    subtitle: "SAP", 
+                    subtitle: "SAP Labs Vancouver", 
                     paragraphs: ["Worked on an infrastructure team for the SAP Cloud Analytics product.", `Added new features, monitored performance, 
                                 and fixed bugs in APIs and microservices.`, "Participated in full software development lifecycle for internal tools.",
                                 "Used technologies such as Java, Spring Boot, Python, Django, Bash, Linux, Docker, Jenkins, Jira, Nginx, and Gunicorn. ",
