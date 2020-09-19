@@ -9,15 +9,15 @@ class Experience extends React.Component {
                     paragraphs: ["Built a transactional messaging system for a new startup.", 
                         "Deployed serverlessly on AWS, using technologies such as Terraform, AWS CodePipeline (for CI/CD), and the Serverless framework.",
                         "Followed an agile methodology and met frequently with the CTO and CEO to discuss design decisions.",
-                        "Worked with a team of four"],
+                        "Worked with a team of four."],
                     links:[],
                     contentClass: "Experience"
                 };
         const exclusive = {title: "BCIT Practicum I", 
                         date: "2019", 
                         subtitle: "Exclusive Dry Cleaners", 
-                        paragraphs: ["Created an API, and updated Android, iOS, and web applications to use our API.", 
-                            "Used technologies such as PHP, Laravel, Java, and Swift.", "Worked with a team of four."],
+                        paragraphs: ["Created an API and updated existing Android, iOS, and web applications to use our API.", 
+                            "Used technologies such as PHP, Laravel, Apache, MySQL, Java, and Swift.", "Worked with a team of four."],
                         links:[],
                         contentClass: "Experience"
                 };

@@ -44,6 +44,7 @@ class About extends React.Component {
                 WPF, Win32, Laravel, DirectX 12</li>
                 <li><span className="TechSection">Databases:</span> SQL, MongoDB</li>
                 <li><span className="TechSection">Operating Systems:</span> Windows, Linux</li>
+                <li><span className="TechSection">IDEs:</span> Eclipse, Visual Studio, CLion, Visual Studio Code, PHPStorm</li>
             </ul></Col>
             </Row>
             <Row className="Interests"><Col xs={{offset:2}}><p>In addition to programming, I have a passion for math, music, film,
