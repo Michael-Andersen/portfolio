@@ -23,7 +23,7 @@ class Projects extends React.Component {
         const wip = {title: "More Projects to Come", 
             date: "2020", 
             subtitle: " ",
-            paragraphs: [`As I continue to build this website I will be adding more of my school and personal projects`],
+            paragraphs: [`As I continue to build this website I will be adding more of my school and personal projects.`],
             links: [],
             contentClass: "Construction"
         };

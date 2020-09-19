@@ -17,7 +17,7 @@ class Experience extends React.Component {
                         date: "2019", 
                         subtitle: "Exclusive Dry Cleaners", 
                         paragraphs: ["Created an API, and updated Android, iOS, and web applications to use our API.", 
-                            "Used technologies such as PHP, Laravel, Java, and Swift.", "Worked with a team of four"],
+                            "Used technologies such as PHP, Laravel, Java, and Swift.", "Worked with a team of four."],
                         links:[],
                         contentClass: "Experience"
                 };
@@ -34,7 +34,7 @@ class Experience extends React.Component {
                     contentClass: "Experience"
             };
         
-        const entries = [yalty, exclusive, sap];
+        const entries = [sap, yalty, exclusive];
         return (
         <div className="TimelineContainer">
             <Timeline entries={entries}/>

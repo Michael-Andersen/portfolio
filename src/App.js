@@ -100,9 +100,7 @@ class App extends React.Component {
       </Container>
       <div className="MainView">
         {this.state.isHamburgerOpen? hamMenu : contentSections}
-        
       </div>
-      
       </HashRouter>
     );  
   }
