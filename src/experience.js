@@ -26,7 +26,7 @@ class Experience extends React.Component {
                     subtitle: "SAP Labs Vancouver", 
                     paragraphs: ["Worked on an infrastructure team for the SAP Cloud Analytics product.", `Added new features, monitored performance, 
                                 and fixed bugs in APIs and microservices.`, "Participated in full software development lifecycle for internal tools.",
-                                "Used technologies such as Java, Spring Boot, Python, Django, Bash, Linux, Docker, Jenkins, Jira, Nginx, and Gunicorn. ",
+                                "Used technologies such as Java, Spring Boot, Guice, Python, Django, JavaScript, Bash, Linux, Docker, Jenkins, Jira, Nginx, and Gunicorn. ",
                                 "Worked in an agile environment including standup meetings and worked on cross-team projects as well.",
                                 "Won first prize on a team of four in the SAP IXP Intern Hackathon July 2018.",
                                 "Original eight month co-op assignment was extended for an additional four months based on my performance."],

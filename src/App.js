@@ -36,6 +36,10 @@ class App extends React.Component {
     this.setState({isHamburgerOpen: !this.state.isHamburgerOpen});
   }
 
+  forceHamburgerClose() {
+    this.setState({isHamburgerOpen: false})
+  }
+
   renderHamburgerMenu(sections) {
     const sectionDisplaysMobile = sections.map( (item) => {
       return item.hasSubsection ? (
@@ -69,29 +73,31 @@ class App extends React.Component {
 
   }
 
-  renderContentSections() {
-    return (<div>
-    <Route exact path="/" component={About}/>
-        <Route path="/education" component={Education}/>
-        <Route path="/experience" component={Experience}/>
-        <Route exact path="/projects" component={Projects}/>
-        <Route path="/projects/imagemorpher" component={ImageMorpher}/></div>);
+  renderContentSections(sections) {
+    const sectionLinks = sections.map((item) => {
+      return item.hasSubsection ? (
+        <Route path={item.path} key={item.title} component={item.comp} />
+          )
+          : (<Route exact path={item.path} key={item.title} component={item.comp} />
+          );
+    });
+    return (<div>{sectionLinks}</div>);
   }
   render() {
-    const sections = [{title:"About", path: "/", hasSubsection: false}, 
-                {title:"Education", path: "/education", hasSubsection: false}, 
-                {title:"Experience", path: "/experience", hasSubsection: false}, 
-                {title:"Projects", path:"/projects", hasSubsection: true}]
+    const sections = [{title:"About", path: "/", hasSubsection: false, comp: About}, 
+                {title:"Education", path: "/education", hasSubsection: false, comp: Education}, 
+                {title:"Experience", path: "/experience", hasSubsection: false, comp: Experience}, 
+                {title:"Projects", path:"/projects", hasSubsection: true, comp: Projects}]
     const sidePanel = this.SidePanel(sections);
     const hamButton = this.renderHamburgerButton();
     const hamMenu = this.renderHamburgerMenu(sections);
-    const contentSections = this.renderContentSections();
+    const contentSections = this.renderContentSections(sections);
     return (
       <HashRouter>
       <Container fluid className="TopView">
       <Row className="TopView">
       <Col className="App-header">
-          Michael Andersen
+      <NavLink className="text-decoration-none text-reset" exact to="/" onClick={()=>this.forceHamburgerClose()}>Michael Andersen</NavLink>
       </Col><Col className="SideCol">
       {sidePanel}
       {hamButton}
