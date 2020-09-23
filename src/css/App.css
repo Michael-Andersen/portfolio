@@ -441,5 +441,9 @@ ul.EntryPoints {
   .TimelineRight {
     left: 0%;
   }
+
+  .Disclaimer {
+    text-align: center;
+  }
 }
 

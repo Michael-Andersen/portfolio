@@ -1,0 +1,21 @@
+{"header": "Software Developer in Toronto",
+"mainBlurb": "I am a recent graduate of a computer science diploma program at the Brisith Columbia Institute of Technology and I am eager to grow in the software industry.
+	I have over one year experience demonstrating my ability to learn quickly and deliver robust software solutions.
+	I have a knack for finding creative solutions to challenging problems and I would love to help you and your company build something great!",
+{"techStackBlurb":"I have experience with a number of different technologies which you will find listed below.
+            I enjoy building with these technologies but I am always happy to learn new tools to suit the needs of my current project.",
+{"techStack":[{"title":"Programming languages", "list": "Java, Python, C#, JavaScript, C++, PHP, Bash, Terraform, HTML5, CSS"},
+                {"title":"Deployment tools", "list": "Maven, Ant, Docker, AWS"},
+                {"title":"Servers", "list": "Nginx, Tomcat, Apache, Gunicorn"},
+                {"title":"CI/CD", "list": "Jenkins, AWS CodePipeline"},
+                {"title":"Version Control", "list": "Git, Github, Bitbucket"},
+                {"title":"Project Management", "list": "Jira"},
+                {"title":"Frameworks/Libraries/APIs/Etc.:", "list": "Spring Boot, Guice, Node.js, React, JQuery, Bootstrap,
+                WPF, Win32, Laravel, DirectX 12}",
+                {"title":"Databases", "list": "SQL, MongoDB}",
+                {"title":"Operating Systems", "list": "Windows, Linux}",
+                {"title":"IDEs", "list": "Eclipse, Visual Studio, CLion, Visual Studio Code, PHPStorm}"],
+"interestsBlurb": "In addition to programming, I have a passion for math, music, film,
+            literature, and travel.",
+}
+				

@@ -2,7 +2,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 class Walkthrough extends React.Component {
 
@@ -22,6 +22,7 @@ class Walkthrough extends React.Component {
     }
     render() {
         const entries = this.props.entries;
+        const disclaimer = this.props.disclaimer;
         const entryDisplays = entries.map(item => {
             return this.renderEntry(item);
           });
@@ -29,7 +30,8 @@ class Walkthrough extends React.Component {
         return (
         <Container className="ProjectWalkthrough">
           <div className="WalkthroughTitle"><h3>{title}</h3></div>
-          {entryDisplays} 
+          {entryDisplays}
+          <Row className="WalkthroughDescription">{disclaimer}</Row> 
         </Container>
       )
     }
