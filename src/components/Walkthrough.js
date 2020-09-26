@@ -4,37 +4,35 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 
-class Walkthrough extends React.Component {
-
-    renderEntry(entry) {
+function WalkthroughEntry(props) {
         return (
-              <div key={entry.alt}>
-              <Row className="WalkthroughSectionFull">
-                <Col ><Image src={entry.screenshot}alt={entry.alt} fluid /></Col>
-                <Col className="WalkthroughDescription">{entry.description}</Col>
-                 </Row>
+              <div key={props.entry.alt}>
+                <Row className="WalkthroughSectionFull">
+                <Col><Image src={props.entry.screenshot}alt={props.entry.alt} fluid /></Col>
+                <Col className="WalkthroughDescription">{props.entry.description}</Col>
+                </Row>
                  <div className="WalkthroughSectionMobile">
-                 <Row>
-                 <Image src={entry.screenshot}alt={entry.alt} fluid /></Row>
-                <Row className="WalkthroughDescription">{entry.description}</Row>
-                 </div></div>
-                 );
+                  <Row><Image src={props.entry.screenshot}alt={props.entry.alt} fluid /></Row>
+                  <Row className="WalkthroughDescription">{props.entry.description}</Row>
+                 </div>
+              </div>
+              );
     }
-    render() {
-        const entries = this.props.entries;
-        const disclaimer = this.props.disclaimer;
+
+function Walkthrough(props) {
+        const entries = props.entries;
+        const disclaimer = props.disclaimer;
         const entryDisplays = entries.map(item => {
-            return this.renderEntry(item);
+            return (<WalkthroughEntry entry={item} />);
           });
-        const title = this.props.title;
+        const title = props.title;
         return (
         <Container className="ProjectWalkthrough">
           <div className="WalkthroughTitle"><h3>{title}</h3></div>
           {entryDisplays}
           <Row className="WalkthroughDescription">{disclaimer}</Row> 
         </Container>
-      )
-    }
+      );
   }
 
   export default Walkthrough;

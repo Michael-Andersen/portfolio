@@ -68,8 +68,6 @@ class App extends React.Component {
                   <div className="SidePanel">
                     <ul className="FullList">{sectionDisplaysFull}</ul></div>
                   </div>);
-                  
-
   }
 
   renderContentSections(sectionsP) {
@@ -80,6 +78,7 @@ class App extends React.Component {
     });
     return (<div>{sectionLinks}</div>);
   }
+
   render() {
     const sections = [{title:"About", path: "/", hasSubsection: false, comp: About}, 
                 {title:"Education", path: "/education", hasSubsection: false, comp: Education}, 
@@ -94,14 +93,15 @@ class App extends React.Component {
     return (
       <HashRouter>
       <Container fluid className="TopView">
-      <Row className="TopView">
-      <Col className="App-header">
-      <NavLink className="text-decoration-none text-reset" exact to="/" onClick={()=>this.forceHamburgerClose()}>Michael Andersen</NavLink>
-      </Col><Col className="SideCol">
-      {sidePanel}
-      {hamButton}
-      </Col>
-      </Row>
+        <Row className="TopView">
+          <Col className="App-header">
+            <NavLink className="text-decoration-none text-reset" exact to="/" onClick={()=>this.forceHamburgerClose()}>Michael Andersen</NavLink>
+          </Col>
+          <Col className="SideCol">
+            {sidePanel}
+            {hamButton}
+          </Col>
+        </Row>
       </Container>
       <div className="MainView">
         {this.state.isHamburgerOpen? hamMenu : contentSections}
