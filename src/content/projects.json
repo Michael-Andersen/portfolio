@@ -1,4 +1,18 @@
-[{"title": "Portfolio Website", 
+[{"title": "What To Watch", 
+                "date": "2020", 
+                "subtitle": "Personal Project", 
+                "paragraphs": ["Twitter bot which gives film recommendations!",
+                            "Mention the bot and tweet the hashtag of a film you like and the bot responds with three other movies you might like.",
+							"The bot is built with Python and uses an API I also built with Python to get user like data from the Letterboxd website in order to make its recommendations.",
+							"Deployed on AWS using Lambdas and SQS defined with Terraform for infrastructure as code"
+                 ],
+                "links":[{"display": "View Bot Code", "url": "https://github.com/Michael-Andersen/WhatToWatch", "isInternal": false},
+						{"display": "View API Code", "url": "https://github.com/Michael-Andersen/PyLB", "isInternal": false},
+						{"display": "Try It Out", "url": "https://twitter.com/whattowatch17", "isInternal": false}
+						],
+                "contentClass": "Twitter"
+            },
+{"title": "Portfolio Website", 
                 "date": "2020", 
                 "subtitle": "Personal Project", 
                 "paragraphs": ["The website you are currently viewing!",
