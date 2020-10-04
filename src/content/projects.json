@@ -1,10 +1,12 @@
 [{"title": "What To Watch", 
                 "date": "2020", 
                 "subtitle": "Personal Project", 
-                "paragraphs": ["Twitter bot which gives film recommendations!",
-                            "Mention the bot and tweet the hashtag of a film you like and the bot responds with three other movies you might like.",
-							"The bot is built with Python and uses an API I also built with Python to get user like data from the Letterboxd website in order to make its recommendations.",
-							"Deployed on AWS using Lambdas and SQS defined with Terraform for infrastructure as code"
+                "paragraphs": [["Twitter bot which gives film recommendations!"],
+                            ["Mention the bot and tweet the hashtag of a film you like and the bot responds with three other movies",
+                            "you might like."],
+                            ["The bot is built with Python and uses an API I also built with Python to get user like data from the",
+                            "Letterboxd website in order to make its recommendations."],
+							["Deployed on AWS using Lambdas, SQS, and DynamoDB defined with Terraform for infrastructure as code"]
                  ],
                 "links":[{"display": "View Bot Code", "url": "https://github.com/Michael-Andersen/WhatToWatch", "isInternal": false},
 						{"display": "View API Code", "url": "https://github.com/Michael-Andersen/PyLB", "isInternal": false},
@@ -15,8 +17,8 @@
 {"title": "Portfolio Website", 
                 "date": "2020", 
                 "subtitle": "Personal Project", 
-                "paragraphs": ["The website you are currently viewing!",
-                            "My first project built with React, without the use of any portfolio templates."
+                "paragraphs": [["The website you are currently viewing!"],
+                            ["My first project built with React, without the use of any portfolio templates."]
                  ],
                 "links":[{"display": "View Source Code", "url": "https://github.com/Michael-Andersen/portfolio", "isInternal": false}],
                 "contentClass": "React"
@@ -24,8 +26,8 @@
 {"title": "Image Morpher", 
                 "date": "2020", 
                 "subtitle": "BCIT School Project", 
-                "paragraphs": ["Windows desktop application that lets users create animations that \"morph\" one image into another.",
-                            "Built with C# and WPF, C and embedded assembly for dramatically improved performance."
+                "paragraphs": [["Windows desktop application that lets users create animations that \"morph\" one image into another."],
+                            ["Built with C# and WPF, C and embedded assembly for dramatically improved performance."]
                  ],
                 "links":[{"display": "View Source Code", "url": "https://github.com/Michael-Andersen/ImageMorpher", "isInternal": false},
                         {"display": "View Walkthrough with Screenshots", "url": "/projects/imagemorpher" , "isInternal": true}],
@@ -34,7 +36,7 @@
 {"title": "More Projects to Come", 
                 "date": "2020", 
                 "subtitle": " ", 
-                "paragraphs": ["As I continue to build this website I will be adding more of my school and personal projects."],
+                "paragraphs": [["As I continue to build this website I will be adding more of my school and personal projects."]],
                 "links":[],
                 "contentClass": "Construction"
             }

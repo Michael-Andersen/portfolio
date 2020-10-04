@@ -20,7 +20,7 @@ function About(props) {
             <Row className="AboutHeader"><h3>{aboutContent.header}</h3></Row>
             <Row>
                 <Col xs={{span:8, offset:2}}>
-                    <p>{aboutContent.mainBlurb}</p>
+                    <p>{aboutContent.mainBlurb.join(" ")}</p>
                 </Col>
             </Row>
             <Row>
@@ -30,7 +30,7 @@ function About(props) {
             </Row>
             <Row>
                 <Col xs={{span:8, offset:2}}>
-                    <p className="About">{aboutContent.techStackBlurb}</p>
+                    <p className="About">{aboutContent.techStackBlurb.join(" ")}</p>
                 </Col>
             </Row>
             <Row>
@@ -40,7 +40,7 @@ function About(props) {
             </Row>
             <Row className="Interests">
                 <Col xs={{offset:2}}>
-                    <p>{aboutContent.interestsBlurb}</p>
+                    <p>{aboutContent.interestsBlurb.join(" ")}</p>
                 </Col>
             </Row>
             <Row>

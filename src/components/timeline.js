@@ -5,7 +5,7 @@ import {
 
 function TimelineEntry(props) {
         const paragraphs = props.entry.paragraphs.map((item, index) => {
-            return (<li key={index}>{item}</li>);
+            return (<li key={index}>{item.join(" ")}</li>);
         });
         const links = props.entry.links.map((item, index) => {
             return item.isInternal ? (<li key={item.display}><NavLink exact to={item.url}>{item.display}</NavLink></li>)
