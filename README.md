@@ -1,4 +1,4 @@
-#Portfolio Website  
+# Portfolio Website  
 
 This is a website made to let interested parties know about my software development experience, as well as a project for me to practice React basics.  
 
